@@ -1,0 +1,195 @@
+a{color: black;}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+  body{
+    text-align: center;
+    animation: mymove 3s infinite;
+    animation-direction: alternate;
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    }
+
+button {
+    width: 300px;
+    border-radius: 30px;
+    border-style: none;
+    outline: none;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 30px;
+    
+    background-color: #00ffee;
+    cursor: pointer;
+    box-shadow: 10px 10px #000000;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 0);
+    box-shadow: 10px 10px #00ffee;
+    color: #00ffee;
+}
+
+  button:hover.home {
+
+    animation: rotate 1s 1;   
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+button:focus{
+    background-color: rgb(255, 255, 0);
+}
+
+button:active{
+    background-color: rgb(231, 231, 0);
+    box-shadow: 10px 10px #00ffee;
+}
+
+
+input[type="text"] {
+  width: 500px;
+  font-size: 30px;
+  height: 60px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #centerdiv{
+   display: inline-block;
+   position: relative;
+   /* animation: mymove2 5s infinite;   
+   animation-direction: alternate;
+   animation-timing-function: linear; */
+   
+  }
+
+  #title{
+    text-align: center;
+    position: relative;
+  }
+
+#c1{
+    position: relative;
+    animation: mymove2 1s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#c2{
+    position: relative;
+    animation: mymove3 1s 1;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+
+}
+
+#darklight {
+  width: 100px;
+  border-radius: 0%;
+  margin: 100px;
+
+}
+
+
+.darkmode{
+background-color: #000000;
+color: #ffffff;
+animation: mymoveDark 3s infinite;
+animation-direction: alternate;
+
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+
+  box-shadow: 3px 3px black;
+}
+
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  margin: 0px;
+padding: 0px;
+  transition: all 750ms ease;
+  left: 0;
+}
+
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+
+#slider ul li img{
+  width: 256px;
+  height: 400px;
+}
+
+
+#slider img:hover{
+  transform: scale(1.3,1.3);
+  position: relative;
+  z-index: 1;
+}
+
+#prev, #next{
+  visibility: hidden;
+}
+
+  @keyframes mymove {
+
+    from {left: 0px; background-color: rgb(255, 255, 255);}
+    to {left: 0px; background-color: rgb(200, 200, 200);}
+  }
+
+  @keyframes mymoveDark {
+
+    from {left: 0px; background-color: rgb(0, 0, 0);}
+    to {left: 0px; background-color: rgb(25, 25, 25);}
+  }
+  @keyframes mymove2 {
+
+    from {left: -40%;}
+    to {left: 45.4%;}
+  }
+
+  @keyframes mymove3 {
+
+    from {left: 45.4%;}
+    to {left: 130.8%;}
+  }
+
+  @keyframes rotate{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }

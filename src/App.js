@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+
+//import './App.css';
+
+import RouterPage from './pages/RouterPage';
+import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header />
+      <RouterPage />
+    <Footer />
     </div>
   );
+}
+
+
+function Header(){
+  return (
+    <h1>Random Movie Selector</h1>
+  )
+  }
+  
+  function Footer(){
+        const { pathname } = useLocation();
+        // you can check a more conditions here
+        if (pathname === "/") {
+          return (<p>Random Movie Selector by Jake Stoner</p>);
+        } else {
+        return (
+          <React.Fragment>
+            <div id ="randomFilm">
+                  <p>Your Random Film will be displayed here!</p>
+                  
+              </div>
+            <Link to="/"><button type="button" className = "home">Go Home</button></Link>
+          </React.Fragment>
+    )
+  }
 }
 
 export default App;
