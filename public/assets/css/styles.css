@@ -7,15 +7,19 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+body{
+  text-align: center;
+  animation-direction: alternate;
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+}
 
-  body{
-    text-align: center;
-    animation: mymove 3s infinite;
-    animation-direction: alternate;
-    padding: 0%;
-    margin: 0%;
-    font-size: 30px;
-    }
+
+li{
+  list-style-type:none;
+  display: inline;
+}
 
 button {
     width: 300px;
@@ -73,8 +77,9 @@ input[type="text"] {
   }
 
   #centerdiv{
-   display: inline-block;
-   position: relative;
+   display: table;
+   margin: 0 auto;
+   /* position: relative; */
    /* animation: mymove2 5s infinite;   
    animation-direction: alternate;
    animation-timing-function: linear; */
@@ -100,7 +105,7 @@ input[type="text"] {
     animation-timing-function: linear;
 
 }
-
+/* 
 #darklight {
   width: 100px;
   border-radius: 0%;
@@ -115,7 +120,7 @@ color: #ffffff;
 animation: mymoveDark 3s infinite;
 animation-direction: alternate;
 
-}
+} */
 
 #slider {
   position: relative;
