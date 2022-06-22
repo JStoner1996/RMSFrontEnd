@@ -17,7 +17,6 @@ function App() {
   );
 }
 
-
 function Header(){
   return (
     <h1>Random Movie Selector</h1>
@@ -28,7 +27,7 @@ function Header(){
         const { pathname } = useLocation();
         // you can check a more conditions here
         if (pathname === "/") {
-          return (<p>Random Movie Selector by Jake Stoner</p>);
+          return (<p></p>);
         } else {
         return (
           <React.Fragment>

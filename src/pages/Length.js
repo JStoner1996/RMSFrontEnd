@@ -5,7 +5,7 @@ export default function Length() {
   return (
     <React.Fragment>
     <p>Enter what length you want (in minutes) and press Go!.</p>
-    <input id="length" type="text" placeholder="100"/> <button type="button" onClick={randomByLength}>Go!</button>
+    <input id="length" type="text" placeholder="100"/> <button type="button" id="randomByLength" onClick={randomByLength}>Go!</button>
     </React.Fragment>
   )
 }
@@ -15,8 +15,8 @@ function randomByLength(){
   let length = document.getElementById("length").value;
   let filmDiv = document.getElementById("randomFilm");
   
-  console.log(`http://localhost:8080/filmRandomizer/film/randomByLength/${length}`);
-  fetch(`http://localhost:8080/filmRandomizer/film/randomByLength/${length}`)
+  console.log(`https://program-1655722794469.azurewebsites.net/filmRandomizer/film/randomByLength/${length}`);
+  fetch(`https://program-1655722794469.azurewebsites.net/filmRandomizer/film/randomByLength/${length}`)
   .then(res => res.json())
   .then(film=> {
     if (film.title != null){
