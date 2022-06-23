@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
           <div>
-            <p> Choose a way to get a Random Movie </p>
+            <h3> Choose a way to get a Random Movie </h3>
          </div>
 
          <nav>

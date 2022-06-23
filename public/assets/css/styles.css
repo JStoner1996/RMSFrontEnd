@@ -13,6 +13,9 @@ body{
   padding: 0%;
   margin: 0%;
   font-size: 30px;
+  background-color: #37323E;
+  color: #BFBDC1;
+
 }
 
 
@@ -29,16 +32,18 @@ button {
     padding: 10px 10px;
     margin: 10px;
     font-size: 30px;
-    
-    background-color: #00ffee;
-    cursor: pointer;
-    box-shadow: 10px 10px #000000;
+
+    background-color: #DE9E36 ;
+    box-shadow: 10px 10px #DEB841;
+
+   cursor: pointer;
+
 }
 
 button:hover{
-    background-color: rgb(255, 255, 0);
-    box-shadow: 10px 10px #00ffee;
-    color: #00ffee;
+    background-color: #DEB841;
+    box-shadow: 10px 10px #DE9E36;
+
 }
 
   button:hover.home {
@@ -49,19 +54,36 @@ button:hover{
 }
 
 button:focus{
-    background-color: rgb(255, 255, 0);
+    background-color: #DEB841;
 }
 
-button:active{
-    background-color: rgb(231, 231, 0);
-    box-shadow: 10px 10px #00ffee;
-}
 
 
 input[type="text"] {
   width: 500px;
   font-size: 30px;
   height: 60px;
+}
+
+
+input[type="text"], textarea {
+
+  background-color : #6D6A75; 
+  color :  #DEB841;
+  border: none;
+  box-shadow: 5px 5px  #BFBDC1;
+  border-radius: 10px;
+
+}
+
+input[type="text"]:hover, textarea {
+
+  background-color : #BFBDC1; 
+  color : #DE9E36;
+  border: none;
+  box-shadow: 5px 5px   #6D6A75;
+
+
 }
 
 .column {
@@ -167,11 +189,18 @@ padding: 0px;
   visibility: hidden;
 }
 
-  @keyframes mymove {
+  @keyframes PulsingBackground {
 
-    from {left: 0px; background-color: rgb(255, 255, 255);}
-    to {left: 0px; background-color: rgb(200, 200, 200);}
+    from {background-color: #DE9E36;}
+    to {background-color: #DEB841;}
   }
+
+  @keyframes PulsingText {
+    from { color: #6D6A75;}
+    from { color: #37323E;}
+  }
+
+
 
   @keyframes mymoveDark {
 
