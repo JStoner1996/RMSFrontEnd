@@ -20,22 +20,20 @@ export default function Home() {
         </nav>    
         
         <br /> <br />
-        <div id = "centerdiv">
           <div id="slider">
             <ul id="slideWrap"> 
-                <li><img src="assets/images/1.png" alt="Jurassic Park Movie Poster"/></li>
-                <li><img src="assets/images/2.png" alt="Back To The Future Movie Poster"/></li>
-                <li><img src="assets/images/3.png" alt="Star Wars Movie Poster"/></li>
-                <li><img src="assets/images/4.png" alt="E.T. Movie Poster"/></li>
-                <li><img src="assets/images/5.png" alt="Avengers: End Game Movie Poster"/></li>
-                <li><img src="assets/images/6.png" alt="Jaws Movie Poster"/></li>
-                <li><img src="assets/images/7.png" alt="The Hunger Games Movie Poster"/></li>
-                <li><img src="assets/images/8.png" alt="Wall-E Movie Poster"/></li>
-                <li><img src="assets/images/9.png" alt="The Godfather Movie Poster"/></li>
-                <li><img src="assets/images/10.png" alt="How To Train Your Dragon Movie Poster"/></li>
+                <li><img id = "img1" src="assets/images/1.png" alt="Jurassic Park Movie Poster"/></li>
+                <li><img id = "img2" src="assets/images/2.png" alt="Back To The Future Movie Poster"/></li>
+                <li><img id = "img3" src="assets/images/3.png" alt="Star Wars Movie Poster"/></li>
+                <li><img id = "img4" src="assets/images/4.png" alt="E.T. Movie Poster"/></li>
+                <li><img id = "img5" src="assets/images/5.png" alt="Avengers: End Game Movie Poster"/></li>
+                <li><img id = "img6" src="assets/images/6.png" alt="Jaws Movie Poster"/></li>
+                <li><img id = "img7" src="assets/images/7.png" alt="The Hunger Games Movie Poster"/></li>
+                <li><img id = "img8" src="assets/images/8.png" alt="Wall-E Movie Poster"/></li>
+                <li><img id = "img9" src="assets/images/9.png" alt="The Godfather Movie Poster"/></li>
+                <li><img id = "img10" src="assets/images/10.png" alt="How To Train Your Dragon Movie Poster"/></li>
             </ul>
         </div>
-      </div>
     </div>
     
   )

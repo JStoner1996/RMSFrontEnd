@@ -5,19 +5,15 @@ export default function Language() {
     <React.Fragment>
         <p>Click which language you want.</p>
         
-        <div id="centerdiv">
-            <div className="row">
+        <div id="language">
+    
                 <div className="column"><button type="button" id = "randomByEnglish" onClick={() => randomByLanguage("English")}>English</button></div>
                 <div className="column"><button type="button" id = "randomByFrench" onClick={() => randomByLanguage("French")}>French</button></div>
                 <div className="column"><button type="button" id = "randomByGerman" onClick={() => randomByLanguage("German")}>German</button></div>
-            </div>
-            
-            <div className="row">
                 <div className="column"><button type="button" id = "randomByItalian" onClick={() => randomByLanguage("Italian")}>Italian</button></div>
                 <div className="column"><button type="button" id = "randomByJapanese" onClick={() => randomByLanguage("Japanese")}>Japanese</button></div>
                 <div className="column"><button type="button" id = "randomByMandarin" onClick={() => randomByLanguage("Mandarin")}>Mandarin</button></div>
            
-            </div>
         </div>
     </React.Fragment>
   )
